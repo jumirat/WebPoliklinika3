@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
     constructor(private router: Router, private pacijentService: PacijentService) { }
     ngOnInit() {
         this.pacijentService.getPacijenti()
-            .then(pacijenti => this.pacijenti = pacijenti.slice(1, 5));
+            .then(pacijenti => this.pacijenti = pacijenti);
     }
     gotoDetail(pacijent: Pacijent) {
         let link = ['PacijentDetail', { id: pacijent.id }];

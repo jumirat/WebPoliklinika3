@@ -1,11 +1,33 @@
 ﻿<div *ngIf="pacijent">
-    <h2>{{pacijent.name}} detalji!</h2>
+    <h2>{{pacijent.prezime}} {{pacijent.ime}} detalji!</h2>
+
     <div>
-        <label>id: </label>{{pacijent.id}}
+        <label>Ime: </label>
+        <input [(ngModel)]="pacijent.ime" placeholder="ime" />
     </div>
     <div>
-        <label>ime: </label>
-        <input [(ngModel)]="pacijent.ime" placeholder="ime" />
+        <label>Prezime: </label>
+        <input [(ngModel)]="pacijent.prezime" placeholder="prezime" />
+    </div>
+    <div>
+        <label>OIB: </label>
+        <input [(ngModel)]="pacijent.oib" placeholder="oib" />
+    </div>
+    <div>
+        <label>Datum rođenja: </label>
+        <input [(ngModel)]="pacijent.datumRodjenja" placeholder="datumRodjenja" />
+    </div>
+    <div>
+        <label>Adresa: </label>
+        <input [(ngModel)]="pacijent.adresa" placeholder="adresa" />
+    </div>
+    <div>
+        <label>Kontakt broj: </label>
+        <input [(ngModel)]="pacijent.kontaktBroj" placeholder="kontaktBroj" />
+    </div>
+    <div>
+        <label>Email: </label>
+        <input [(ngModel)]="pacijent.rmail" placeholder="email" />
     </div>
     <button (click)="goBack()">Natrag</button>
     <button (click)="save()">Spremi</button>

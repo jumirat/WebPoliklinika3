@@ -33,7 +33,7 @@ System.register(['@angular/core', './pacijent.service', '@angular/router-depreca
                 DashboardComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     this.pacijentService.getPacijenti()
-                        .then(function (pacijenti) { return _this.pacijenti = pacijenti.slice(1, 5); });
+                        .then(function (pacijenti) { return _this.pacijenti = pacijenti; });
                 };
                 DashboardComponent.prototype.gotoDetail = function (pacijent) {
                     var link = ['PacijentDetail', { id: pacijent.id }];

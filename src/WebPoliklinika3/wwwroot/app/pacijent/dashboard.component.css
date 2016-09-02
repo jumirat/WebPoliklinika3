@@ -17,7 +17,8 @@ h3 {
   padding-right: 0;
 }
 .grid {
-  margin: 0;
+    margin-top: 50px;
+
 }
 .col-1-4 {
   width: 25%;

@@ -44,7 +44,7 @@ System.register(['@angular/core', './pacijent.service', './pacijenti.component',
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n  <h1>{{title}}</h1>\n  <nav>\n    <a [routerLink]=\"['Dashboard']\">Dashboard</a>\n    <a [routerLink]=\"['Pacijenti']\">Pacijenti</a>\n  </nav>\n  <router-outlet></router-outlet>\n  ",
+                        templateUrl: '/app/pacijent/app.component.html',
                         directives: [
                             router_deprecated_1.ROUTER_DIRECTIVES
                         ],

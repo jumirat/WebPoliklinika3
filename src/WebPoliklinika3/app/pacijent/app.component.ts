@@ -12,14 +12,7 @@ import { PacijentDetailComponent } from './pacijent-detail.component';
 
 @Component({
     selector: 'my-app',
-    template: `
-  <h1>{{title}}</h1>
-  <nav>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <a [routerLink]="['Pacijenti']">Pacijenti</a>
-  </nav>
-  <router-outlet></router-outlet>
-  `,
+    templateUrl: '/app/pacijent/app.component.html',
     directives: [
         ROUTER_DIRECTIVES
     ],

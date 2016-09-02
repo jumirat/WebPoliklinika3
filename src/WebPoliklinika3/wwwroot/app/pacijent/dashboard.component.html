@@ -1,8 +1,7 @@
-﻿<h3>Lista pacijenata</h3>
-<div class="grid grid-pad">
+﻿<div class="grid grid-pad">
     <div *ngFor="let pacijent of pacijenti" (click)="gotoDetail(pacijent)" class="col-1-4">
         <div class="module pacijent">
-            <h4>{{pacijent.ime}}</h4>
+            <h4>{{pacijent.prezime}} {{pacijent.ime}}</h4>
         </div>
     </div>
 </div>
