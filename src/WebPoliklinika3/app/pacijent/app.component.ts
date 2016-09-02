@@ -27,7 +27,7 @@ import { PacijentDetailComponent } from './pacijent-detail.component';
         ROUTER_PROVIDERS,
         PacijentService
     ],
-    styleUrls: ['app/app.component.css']
+    styleUrls: ['app/pacijent/app.component.css']
 })
 @RouteConfig([
     {

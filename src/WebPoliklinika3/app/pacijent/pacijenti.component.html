@@ -8,7 +8,6 @@
     </li>
 </ul>
 <button (click)="addPacijent()">Dodaj novog pacijenta</button>
-<button (click)="resetPacijenti()">Resetiraj pacijente</button>
 <div *ngIf="addingPacijent">
     <my-patient-detail (close)="close($event)"></my-patient-detail>
 </div>

@@ -6,8 +6,8 @@ import { PacijentDetailComponent } from './pacijent-detail.component';
 
 @Component({
     selector: 'my-patients',
-    templateUrl: '/app/pacijenti.component.html',
-    styleUrls: ['app/pacijenti.component.css'],
+    templateUrl: '/app/pacijent/pacijenti.component.html',
+    styleUrls: ['app/pacijent/pacijenti.component.css'],
     directives: [PacijentDetailComponent]
 })
 
@@ -32,7 +32,7 @@ export class PacijentiComponent implements OnInit {
     gotoDetail() {
         this.router.navigate(['PacijentDetail', { id: this.selectedPacijent.id }]);
     }
-    addPAcijent() {
+    addPacijent() {
         this.addingPacijent = true;
         this.selectedPacijent = null;
     }
@@ -51,10 +51,5 @@ export class PacijentiComponent implements OnInit {
                 if (this.selectedPacijent === pacijent) { this.selectedPacijent = null; }
             })
             .catch(error => this.error = error); // TODO: Display error message
-    }
-
-    resetPacijenti() {
-        this.pacijentService.resetPacijenti()
-            .then(() => this.getPacijenti());
     }
 }

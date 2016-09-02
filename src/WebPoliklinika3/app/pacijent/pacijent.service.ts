@@ -7,7 +7,7 @@ import { Pacijent } from './pacijent';
 
 @Injectable()
 export class PacijentService {
-    private pacijentiUrl = 'api/Pacients';  // URL to web api
+    private pacijentiUrl = 'api/Pacijents';  // URL to web api
 
     constructor(private http: Http) { }
 
@@ -68,13 +68,6 @@ export class PacijentService {
             return this.put(pacijent);
         }
         return this.post(pacijent);
-    }
-
-    resetPacijenti() {
-        var url = `${this.pacijentiUrl}/reset`;
-        return this.http.post(url, null)
-            .toPromise()
-            .catch(this.handleError);
     }
 
     private handleError(error: any) {

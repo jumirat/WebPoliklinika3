@@ -47,7 +47,7 @@ System.register(['@angular/core', './pacijent.service', '@angular/router-depreca
                 PacijentiComponent.prototype.gotoDetail = function () {
                     this.router.navigate(['PacijentDetail', { id: this.selectedPacijent.id }]);
                 };
-                PacijentiComponent.prototype.addPAcijent = function () {
+                PacijentiComponent.prototype.addPacijent = function () {
                     this.addingPacijent = true;
                     this.selectedPacijent = null;
                 };
@@ -70,16 +70,11 @@ System.register(['@angular/core', './pacijent.service', '@angular/router-depreca
                     })
                         .catch(function (error) { return _this.error = error; }); // TODO: Display error message
                 };
-                PacijentiComponent.prototype.resetPacijenti = function () {
-                    var _this = this;
-                    this.pacijentService.resetPacijenti()
-                        .then(function () { return _this.getPacijenti(); });
-                };
                 PacijentiComponent = __decorate([
                     core_1.Component({
                         selector: 'my-patients',
-                        templateUrl: '/app/pacijenti.component.html',
-                        styleUrls: ['app/pacijenti.component.css'],
+                        templateUrl: '/app/pacijent/pacijenti.component.html',
+                        styleUrls: ['app/pacijent/pacijenti.component.css'],
                         directives: [pacijent_detail_component_1.PacijentDetailComponent]
                     }), 
                     __metadata('design:paramtypes', [router_deprecated_1.Router, pacijent_service_1.PacijentService])

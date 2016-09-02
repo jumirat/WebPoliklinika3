@@ -5,8 +5,8 @@ import { Router } from '@angular/router-deprecated';
 
 @Component({
     selector: 'my-dashboard',
-    templateUrl: '/app/dashboard.component.html',
-    styleUrls: ['app/dashboard.component.css']
+    templateUrl: '/app/pacijent/dashboard.component.html',
+    styleUrls: ['app/pacijent/dashboard.component.css']
 })
 
 

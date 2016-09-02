@@ -75,8 +75,8 @@ System.register(['@angular/core', './pacijent', '@angular/router-deprecated', '.
                 PacijentDetailComponent = __decorate([
                     core_1.Component({
                         selector: 'my-patient-detail',
-                        templateUrl: '/app/patient-detail.component.html',
-                        styleUrls: ['app/patient-detail.component.css']
+                        templateUrl: '/app/pacijent/pacijent-detail.component.html',
+                        styleUrls: ['app/pacijent/pacijent-detail.component.css']
                     }), 
                     __metadata('design:paramtypes', [pacijent_service_1.PacijentService, router_deprecated_1.RouteParams])
                 ], PacijentDetailComponent);

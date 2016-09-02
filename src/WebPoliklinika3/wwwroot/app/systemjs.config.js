@@ -4,7 +4,7 @@
 /** Map relative paths to URLs. */
 var map = {
     'app': 'app',
-    'main': 'app/main.js',
+    'main': 'app/pacijent/main.js',
     '@angular': 'js/@angular',
     //'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs': 'js/rxjs'

@@ -5,8 +5,8 @@ import { PacijentService } from './pacijent.service';
 
 @Component({
     selector: 'my-patient-detail',
-    templateUrl: '/app/patient-detail.component.html',
-    styleUrls: ['app/patient-detail.component.css']
+    templateUrl: '/app/pacijent/pacijent-detail.component.html',
+    styleUrls: ['app/pacijent/pacijent-detail.component.css']
 })
 
 export class PacijentDetailComponent implements OnInit {

@@ -25,7 +25,7 @@ System.register(['@angular/core', '@angular/http', 'rxjs/add/operator/toPromise'
             PacijentService = (function () {
                 function PacijentService(http) {
                     this.http = http;
-                    this.pacijentiUrl = 'api/Pacients'; // URL to web api
+                    this.pacijentiUrl = 'api/Pacijents'; // URL to web api
                 }
                 PacijentService.prototype.getPacijenti = function () {
                     return this.http.get(this.pacijentiUrl)
@@ -74,12 +74,6 @@ System.register(['@angular/core', '@angular/http', 'rxjs/add/operator/toPromise'
                         return this.put(pacijent);
                     }
                     return this.post(pacijent);
-                };
-                PacijentService.prototype.resetPacijenti = function () {
-                    var url = this.pacijentiUrl + "/reset";
-                    return this.http.post(url, null)
-                        .toPromise()
-                        .catch(this.handleError);
                 };
                 PacijentService.prototype.handleError = function (error) {
                     console.error('An error occurred', error);

@@ -42,8 +42,8 @@ System.register(['@angular/core', './pacijent.service', '@angular/router-depreca
                 DashboardComponent = __decorate([
                     core_1.Component({
                         selector: 'my-dashboard',
-                        templateUrl: '/app/dashboard.component.html',
-                        styleUrls: ['app/dashboard.component.css']
+                        templateUrl: '/app/pacijent/dashboard.component.html',
+                        styleUrls: ['app/pacijent/dashboard.component.css']
                     }), 
                     __metadata('design:paramtypes', [router_deprecated_1.Router, pacijent_service_1.PacijentService])
                 ], DashboardComponent);

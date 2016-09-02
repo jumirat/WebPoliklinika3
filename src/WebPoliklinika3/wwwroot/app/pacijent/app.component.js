@@ -52,7 +52,7 @@ System.register(['@angular/core', './pacijent.service', './pacijenti.component',
                             router_deprecated_1.ROUTER_PROVIDERS,
                             pacijent_service_1.PacijentService
                         ],
-                        styleUrls: ['app/app.component.css']
+                        styleUrls: ['app/pacijent/app.component.css']
                     }),
                     router_deprecated_1.RouteConfig([
                         {
