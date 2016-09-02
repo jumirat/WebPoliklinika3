@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using WebPoliklinika3.Models.DbEntities;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebPoliklinika3
 {
@@ -28,6 +30,9 @@ namespace WebPoliklinika3
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddDbContext<BazaPoliklinikaContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("AzureConnection")));
+
             services.AddMvc();
         }
 

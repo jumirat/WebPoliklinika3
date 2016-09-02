@@ -6,11 +6,9 @@ namespace WebPoliklinika3.Models.DbEntities
 {
     public partial class BazaPoliklinikaContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-            optionsBuilder.UseSqlServer(@"Server=bazapoliklinika.database.windows.net,1433;Database=BazaPoliklinika;User ID=aspadmin;Password=Administrator1;");
-        }
+        public BazaPoliklinikaContext(DbContextOptions<BazaPoliklinikaContext> options)
+            : base(options)
+        { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
