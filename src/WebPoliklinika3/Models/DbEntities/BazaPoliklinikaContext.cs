@@ -133,9 +133,7 @@ namespace WebPoliklinika3.Models.DbEntities
 
             modelBuilder.Entity<Pacijent>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .HasColumnName("ID")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.Adresa).HasMaxLength(50);
 
