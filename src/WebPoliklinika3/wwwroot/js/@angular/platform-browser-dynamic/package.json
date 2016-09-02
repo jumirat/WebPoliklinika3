@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "@angular/platform-browser-dynamic@2.0.0-rc.5",
+      "d:\\user\\documents\\visual studio 2015\\Projects\\WebPoliklinika3\\src\\WebPoliklinika3"
+    ]
+  ],
+  "_cnpm_publish_time": 1470759655939,
+  "_from": "@angular/platform-browser-dynamic@2.0.0-rc.5",
+  "_id": "@angular/platform-browser-dynamic@2.0.0-rc.5",
+  "_inCache": true,
+  "_location": "/@angular/platform-browser-dynamic",
+  "_nodeVersion": "5.4.1",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/platform-browser-dynamic-2.0.0-rc.5.tgz_1470759653256_0.1995631034951657"
+  },
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angular"
+  },
+  "_npmVersion": "3.9.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@angular/platform-browser-dynamic",
+    "raw": "@angular/platform-browser-dynamic@2.0.0-rc.5",
+    "rawSpec": "2.0.0-rc.5",
+    "scope": "@angular",
+    "spec": "2.0.0-rc.5",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-2.0.0-rc.5.tgz",
+  "_shasum": "4a5362679a9378600a1cc012030f2bc51555f530",
+  "_shrinkwrap": null,
+  "_spec": "@angular/platform-browser-dynamic@2.0.0-rc.5",
+  "_where": "d:\\user\\documents\\visual studio 2015\\Projects\\WebPoliklinika3\\src\\WebPoliklinika3",
+  "author": {
+    "name": "angular"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "dependencies": {},
+  "description": "",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "4a5362679a9378600a1cc012030f2bc51555f530",
+    "size": 82850,
+    "tarball": "http://r.cnpmjs.org/@angular/platform-browser-dynamic/download/@angular/platform-browser-dynamic-2.0.0-rc.5.tgz"
+  },
+  "homepage": "https://github.com/angular/angular#readme",
+  "installable": true,
+  "jsnext:main": "esm/index.js",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "angular",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "name": "@angular/platform-browser-dynamic",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular/common": "^2.0.0-rc.5",
+    "@angular/compiler": "^2.0.0-rc.5",
+    "@angular/core": "^2.0.0-rc.5",
+    "@angular/platform-browser": "^2.0.0-rc.5"
+  },
+  "publish_time": 1470759655939,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "scripts": {},
+  "typings": "index.d.ts",
+  "version": "2.0.0-rc.5"
+}

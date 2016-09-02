@@ -1,0 +1,20 @@
+﻿<h2>Lista pacijenata</h2>
+<ul class="pacijenti">
+    <li *ngFor="let pacijent of pacijenti" (click)="onSelect(pacijent)" [class.selected]="pacijent === selectedPacijent">
+        <span class="pacijent-element">
+            <span class="badge">{{pacijent.id}}</span> {{pacijent.ime}}
+        </span>
+        <button class="delete-button" (click)="delete(pacijent, $event)">Izbriši</button>
+    </li>
+</ul>
+<button (click)="addPacijent()">Dodaj novog pacijenta</button>
+<button (click)="resetPacijenti()">Resetiraj pacijente</button>
+<div *ngIf="addingPacijent">
+    <my-patient-detail (close)="close($event)"></my-patient-detail>
+</div>
+<div *ngIf="selectedPacijent">
+    <h2>
+        {{selectedPacijent.ime | uppercase}} je prikazani pacijent
+    </h2>
+    <button (click)="gotoDetail()">Vidi detalje</button>
+</div>

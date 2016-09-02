@@ -1,0 +1,12 @@
+﻿<div *ngIf="pacijent">
+    <h2>{{pacijent.name}} detalji!</h2>
+    <div>
+        <label>id: </label>{{pacijent.id}}
+    </div>
+    <div>
+        <label>ime: </label>
+        <input [(ngModel)]="pacijent.ime" placeholder="ime" />
+    </div>
+    <button (click)="goBack()">Natrag</button>
+    <button (click)="save()">Spremi</button>
+</div>
