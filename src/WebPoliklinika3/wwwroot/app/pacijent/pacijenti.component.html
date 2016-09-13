@@ -2,12 +2,12 @@
     <li *ngFor="let pacijent of pacijenti" (click)="onSelect(pacijent)" [class.selected]="pacijent === selectedPacijent">
         <span class="pacijent-element">
             <span class="badge">{{pacijent.prezime}} {{pacijent.ime}}</span>
-            <button class="delete-button btn btn-xs" (click)="delete(pacijent, $event)">Izbriši</button>
+            <button class="btn btn-xs" (click)="delete(pacijent, $event)">Izbriši</button>
         </span>
         
     </li>
 </ul>
-<button (click)="addPacijent()">Dodaj novog pacijenta</button>
+<button (click)="addPacijent()" class="btn btn-primary btn-sm">Dodaj novog pacijenta</button>
 <div *ngIf="addingPacijent">
     <my-patient-detail (close)="close($event)"></my-patient-detail>
 </div>
@@ -15,5 +15,5 @@
     <h2>
         {{selectedPacijent.prezime}} {{selectedPacijent.ime}}
     </h2>
-    <button (click)="gotoDetail()">Vidi detalje</button>
+    <button (click)="gotoDetail()" class="btn btn-primary">Vidi detalje</button>
 </div>

@@ -1,35 +1,49 @@
 ﻿<div *ngIf="pacijent">
     <h2>{{pacijent.prezime}} {{pacijent.ime}} detalji!</h2>
-    <form>
+    <form class="form-horizontal">
         <div class="form-group">
-            <label>Ime: </label>
-            <input [(ngModel)]="pacijent.ime" placeholder="ime" [ngModelOptions]="{standalone: true}"/>
+            <label class="col-sm-2 control-label">Ime: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.ime" placeholder="ime" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>Prezime: </label>
-            <input [(ngModel)]="pacijent.prezime" placeholder="prezime" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Prezime: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.prezime" placeholder="prezime" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>OIB: </label>
-            <input [(ngModel)]="pacijent.oib" placeholder="oib" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">OIB: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.oib" placeholder="oib" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>Datum rođenja: </label>
-            <input [(ngModel)]="pacijent.datumRodjenja" placeholder="datumRodjenja" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Datum rođenja: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.datumRodjenja" placeholder="datumRodjenja" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>Adresa: </label>
-            <input [(ngModel)]="pacijent.adresa" placeholder="adresa" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Adresa: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.adresa" placeholder="adresa" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>Kontakt broj: </label>
-            <input [(ngModel)]="pacijent.kontaktBroj" placeholder="kontaktBroj" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Kontakt broj: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.kontaktBroj" placeholder="kontaktBroj" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <div>
-            <label>Email: </label>
-            <input [(ngModel)]="pacijent.email" placeholder="email" [ngModelOptions]="{standalone: true}"/>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email: </label>
+            <div class="col-sm-4">
+                <input [(ngModel)]="pacijent.email" placeholder="email" [ngModelOptions]="{standalone: true}" class="form-control" />
+            </div>
         </div>
-        <button (click)="goBack()">Natrag</button>
-        <button (click)="save()">Spremi</button>
+        <button (click)="goBack()" class="btn btn-primary glyphicon glyphicon-chevron-left"> Natrag</button>
+        <button (click)="save()" class="btn btn-success glyphicon glyphicon-floppy-disk"> Spremi</button>
     </form>
 </div>

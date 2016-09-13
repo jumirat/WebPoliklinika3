@@ -1,7 +1,9 @@
-﻿<h1>{{title}}</h1>
-<nav>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <a [routerLink]="['Pacijenti']">Pacijenti</a>
+﻿<h3>{{title}}</h3>
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="navbar-btn"><a [routerLink]="['Dashboard']">Dashboard</a></li>
+        <li class="navbar-btn"><a [routerLink]="['Pacijenti']">Pacijenti</a></li>
+    </ul>
 </nav>
 <router-outlet></router-outlet>
 <my-dashboard></my-dashboard>
