@@ -1,34 +1,35 @@
 ﻿<div *ngIf="pacijent">
     <h2>{{pacijent.prezime}} {{pacijent.ime}} detalji!</h2>
-
-    <div>
-        <label>Ime: </label>
-        <input [(ngModel)]="pacijent.ime" placeholder="ime" />
-    </div>
-    <div>
-        <label>Prezime: </label>
-        <input [(ngModel)]="pacijent.prezime" placeholder="prezime" />
-    </div>
-    <div>
-        <label>OIB: </label>
-        <input [(ngModel)]="pacijent.oib" placeholder="oib" />
-    </div>
-    <div>
-        <label>Datum rođenja: </label>
-        <input [(ngModel)]="pacijent.datumRodjenja" placeholder="datumRodjenja" />
-    </div>
-    <div>
-        <label>Adresa: </label>
-        <input [(ngModel)]="pacijent.adresa" placeholder="adresa" />
-    </div>
-    <div>
-        <label>Kontakt broj: </label>
-        <input [(ngModel)]="pacijent.kontaktBroj" placeholder="kontaktBroj" />
-    </div>
-    <div>
-        <label>Email: </label>
-        <input [(ngModel)]="pacijent.rmail" placeholder="email" />
-    </div>
-    <button (click)="goBack()">Natrag</button>
-    <button (click)="save()">Spremi</button>
+    <form>
+        <div class="form-group">
+            <label>Ime: </label>
+            <input [(ngModel)]="pacijent.ime" placeholder="ime" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Prezime: </label>
+            <input [(ngModel)]="pacijent.prezime" placeholder="prezime" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>OIB: </label>
+            <input [(ngModel)]="pacijent.oib" placeholder="oib" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Datum rođenja: </label>
+            <input [(ngModel)]="pacijent.datumRodjenja" placeholder="datumRodjenja" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Adresa: </label>
+            <input [(ngModel)]="pacijent.adresa" placeholder="adresa" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Kontakt broj: </label>
+            <input [(ngModel)]="pacijent.kontaktBroj" placeholder="kontaktBroj" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <div>
+            <label>Email: </label>
+            <input [(ngModel)]="pacijent.email" placeholder="email" [ngModelOptions]="{standalone: true}"/>
+        </div>
+        <button (click)="goBack()">Natrag</button>
+        <button (click)="save()">Spremi</button>
+    </form>
 </div>
