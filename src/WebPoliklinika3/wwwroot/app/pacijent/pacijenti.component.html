@@ -1,19 +1,43 @@
-﻿<ul class="pacijenti">
-    <li *ngFor="let pacijent of pacijenti" (click)="onSelect(pacijent)" [class.selected]="pacijent === selectedPacijent">
-        <span class="pacijent-element">
-            <span class="badge">{{pacijent.prezime}} {{pacijent.ime}}</span>
-            <button class="btn btn-xs" (click)="delete(pacijent, $event)">Izbriši</button>
-        </span>
-        
-    </li>
-</ul>
-<button (click)="addPacijent()" class="btn btn-primary btn-sm">Dodaj novog pacijenta</button>
-<div *ngIf="addingPacijent">
-    <my-patient-detail (close)="close($event)"></my-patient-detail>
-</div>
-<div *ngIf="selectedPacijent">
-    <h2>
-        {{selectedPacijent.prezime}} {{selectedPacijent.ime}}
-    </h2>
-    <button (click)="gotoDetail()" class="btn btn-primary">Vidi detalje</button>
+﻿<div class="wrapper">
+    <div class="pacijenti-list">
+        <ul class="pacijenti">
+            <li *ngFor="let pacijent of pacijenti" (click)="onSelect(pacijent)" [class.selected]="pacijent === selectedPacijent">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-patient">
+                        {{pacijent.prezime}} {{pacijent.ime}}
+                        <!--<button class="btn btn-xs" (click)="delete(pacijent, $event)">Izbriši</button>-->
+                    </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a (click)="gotoDetail()">Detalji</a></li>
+                        <li><a (click)="delete(pacijent, $event)">Izbriši</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <button (click)="addPacijent()" class="btn btn-primary btn-sm">Dodaj novog pacijenta</button>
+    </div>
+
+    <div *ngIf="addingPacijent" class="pacijenti-detalji">
+        <my-patient-detail (close)="close($event)"></my-patient-detail>
+    </div>
+    <div class="pacijenti-detalji">
+
+        <div *ngIf="selectedPacijent">
+            <h2>
+                {{selectedPacijent.prezime}} {{selectedPacijent.ime}}
+            </h2>
+            <ul class="pacijenti">
+                <li>OIB: {{selectedPacijent.oib}}</li>
+                <li>Datum rođenja: {{selectedPacijent.datumRodjenja}}</li>
+                <li>Adresa: {{selectedPacijent.adresa}}</li>
+                <li>Kontakt: {{selectedPacijent.kontaktBroj}}</li>
+                <li>Email: {{selectedPacijent.email}}</li>
+            </ul>
+            <button (click)="gotoDetail()" class="btn btn-primary">Vidi detalje</button>
+        </div>
+    </div>
 </div>

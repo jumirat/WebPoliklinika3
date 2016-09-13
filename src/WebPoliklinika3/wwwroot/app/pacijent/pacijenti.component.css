@@ -1,12 +1,51 @@
-﻿  .selected {
+﻿  .pacijenti {
+    list-style-type: none;
+    /*width: 22em;
+    margin: 0px;*/
+  }  
+
+  .btn-patient{
+      width: 150px;
+      margin: 5px 0 5px 0;
+  }
+
+  .dropdown-toggle{
+      margin: 5px 0 5px 0;
+  }
+
+  .pacijenti-list{
+      float: left;
+  }
+
+  .pacijenti-detalji{
+      float:right;
+      /*border: 1px solid black;*/
+      border-radius:5px;
+      padding: 10px;
+      margin-left: 100px;
+  }
+
+  .wrapper{
+      display:inline-block;
+  }
+label {
+  display: inline;
+  width: 10em;
+  margin: 2em 0 0 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+
+/*.selected {
     background-color: #CFD8DC !important;
     color: white;
   }
-  .pacijenti {
-    list-style-type: none;
-    width: 22em;
-    margin: 0px;
-  }
+
   .pacijenti li {
     cursor: pointer;
     position: relative;
@@ -46,4 +85,4 @@
       height: 2.9em;
       border-radius: 4px;
       padding: 0 1em 0 1em;
-  }
+  }*/
